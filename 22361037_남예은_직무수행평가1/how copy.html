@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding: 0; margin: 0;}
+         li{list-style-type: circle;}
+         #head{background-color: rgb(224, 224, 224);}
+         #logo{float: left; margin: 20px 0 10px 20px; border: solid 1px black; font-size: 56PX; font-weight: bold; text-align: center;}
+         #menu{clear: both; height: 40px; background-color: rgb(255, 255, 255); color: black; text-align: center;
+        padding-top: 15px; font-size: 22px; border: solid 1px black; margin: 0 30px 0 30px;} 
+         
+        a{margin-left:50px}
+            a:link, a:visited{border: 1px black; 
+                color: rgb(0, 0, 0); 
+            padding: 0px 20px; text-align: center; text-decoration: none; display: inline-block;}
+            a:hover, a:active{background-color: rgb(196, 196, 196);}
+
+        #dive {background-color: rgb(255, 255, 255); width: 200px; height: 50px; border: 1px black;
+        position: absolute; left: 50%; right: 50%; transform: translate(-110%,5%); text-align: center; font-size: 18px;}
+        #dive1 {background-color: rgb(255, 255, 255); width: 200px; height: 50px; border: 1px black;
+        position: absolute; left: 50%; right: 50%; transform: translate(10%,5%); text-align: center;}
+        
+        .pro{align-items: center;}
+    .main{font-size: 34px; font-weight: bold; color: rgb(140, 0, 164);}
+    body{text-align: center; color: rgb(45, 65, 77);}
+    #nav{border: 1px solid black;}
+        
+    input[id*="answer"]{display: none;}
+    input[id*="answer"] + label{display: block; padding: 20px; border: 1px solid black;
+    font-weight: bold; background-color: black; cursor: pointer; color: aliceblue;}
+
+   input[id*="answer"] +label +div{max-height: 0; transition: all .35s; overflow: hidden;
+   background-color: rgb(255, 255, 255); font-size: 20px;}
+   
+   input[id*="answer"] +label +div p{display: inline-block; padding: 20px;}
+   input[id*="answer"]:checked +label+div{max-height: 100px;}
+
+</style>
+</head>
+
+<body>
+    <div id="head">
+        <div id="logo">PROTFOLIO</div>
+      </div>
+  
+      <div id="menu">
+          <ul id="menu">
+              <a href="index.html">메인</a><a href="designfinal.html">명화</a> 
+              <a href="videotwo.html">커피랑도서관</a> <a href="focus.html">에니어그램</a> 
+              <a href="whale.html">고래</a><a href="how.html">기획방식</a>
+  
+          </ul>
+      </div>
+<br><br><br>
+
+
+
+    <div id="nav"><h3><a href="how.html">영상 기획</a><b></b><b></b> <a href="how copy.html">사이트 기획</a> </h3></div>
+<br><br>
+
+
+<div class="accordion">
+    <input type="checkbox" id="answer01">
+    <label for="answer01"><h2>1. 주제선정</h2></label>
+    <div><p>주제를 선정하고 마인드맵을 통해 어울리는 키워드를 도출한다.</p></div>
+
+    <input type="checkbox" id="answer02">
+    <label for="answer02"><h2>2. 주제 구체화</h2></label>
+    <div><p>도출된 키워드들로 한번 더 마인드 맵을 진행해 주제를 더 세분화, 구체화 한다.</p></div>
+
+    <input type="checkbox" id="answer03">
+    <label for="answer03"><h2>3. 리서치</h2></label>
+    <div><p>주제를 바탕으로 어울리는 레퍼런스 영상을 살펴본다.</p></div>
+
+    <input type="checkbox" id="answer04">
+    <label for="answer04"><h2>4. 스토리보드</h2></label>
+    <div><p>원하는 주제를 잘 표현할 수 있는 컷들로 스토리보드를 짠다.</p></div>
+
+    <input type="checkbox" id="answer05">
+    <label for="answer05"><h2>5. 애니메틱</h2></label>
+    <div><p>스토리보드를 토대로 애니메틱을 제작한다.</p></div>
+
+    <input type="checkbox" id="answer06">
+    <label for="answer06"><h2>6. 중간 시안</h2></label>
+    <div><p>흐름의 자연스러움과 주제 전달성을 고려하여 중간 시안을 그린다.</p></div>
+
+    <input type="checkbox" id="answer06">
+    <label for="answer06"><h2>6. 최종 시안</h2></label>
+    <div><p>음량, 텍스트등을 다듬고 전달하고자 하는 목표가 잘 전달되는지 확인하며 마무리한다. </p></div>
+</div>
+
+   
+</body>
+</html>
