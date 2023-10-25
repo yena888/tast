@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+*{padding: 0; margin: 0;}
+     li{list-style-type: circle;}
+     #head{background-color: rgb(224, 224, 224);}
+     #logo{float: left; margin: 20px 0 10px 20px; border: solid 1px black; font-size: 56PX; font-weight: bold; text-align: center;}
+     #menu{clear: both; height: 40px; background-color: rgb(255, 255, 255); color: black; text-align: center;
+    padding-top: 5px; font-size: 20px; border: solid 1px black; margin: 0 30px 0 30px;} 
+     
+    a{margin-left:50px}
+        a:link, a:visited{border: 1px black; 
+            color: rgb(0, 0, 0); 
+        padding: 0px 20px; text-align: center; text-decoration: none; display: inline-block;}
+        a:hover, a:active{background-color: rgb(231, 231, 231);}
+
+
+
+
+        *{margin: 0; padding: 0; box-sizing: border-box; font-family: Montserrat;}
+        li{list-style: none;}
+        a{text-decoration: none; color: inherit;}
+        img{vertical-align: top;}
+        .wrap{background: #282828; height: 100vh; display: flex;
+        justify-content: center; align-items:center;}
+        .card{width: 1400px; height: 600px; overflow: hidden; position: relative;}
+        .card .img{transform: scale(1.15); object-fit: cover; 
+            transition:opacity 0.5s, transform 1s;}
+        .card:hover .img{transform: scale(1); opacity: 0.5;}
+
+        .text{position: absolute; top:0; left: 0; width: 100%; height: 100%; text-align: center;
+             text-align: center; color: rgb(255, 255, 255);
+        display:flex; align-items: center; justify-content: center; flex-direction: column;}
+    
+        
+        .text h2{text-transform: uppercase; text-shadow: 1px 1px 10px rgba(0, 0, 0, .5); 
+        margin-bottom: 10px; transform: translateY(20px); transition: all 0.5s;}
+        .text p{font-size: 14px; transform: translateY(20px);
+        transition: all 0.5s; opacity: 0;}
+
+        .card:hover .text h2{transform: translateY(0);}
+        .card:hover .text p{transform: translateY(0); opacity: 1;}
+        
+
+    </style>
+</head>
+
+
+<body>
+    <div id="head">
+        <div id="logo">PROTFOLIO</div>
+      </div>
+  
+      <div id="menu">
+          <ul id="menu">
+              <a href="">메인</a><a href="designfinal.html">명화</a> 
+              <a href="videotwo.html">커피랑도서관</a> <a href="focus.html">에니어그램</a> 
+              <a href="whale.html">고래</a><a href="how.html">기획방식</a>
+  
+          </ul> 
+          <br>
+
+
+
+    <div class="wrap">
+        <div class="card">
+            <img src="./img/main.jpg" class="img">
+            <div class="text">
+                <h2>PROTFOLIO</h2>
+                <p>2023.03.02~2023.10.25</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
