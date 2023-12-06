@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{text-align: center;}
+
+        li{list-style-type: none;}
+        #logo{float: left; text-align: center; margin: 15px 0 8px 790px;}
+        #menu{clear: both; height: 40px; background-color: #000000; color: white;
+        text-align: center; padding-top: 30px; font-size: 20px; margin: 0 20px 0px 0px; position: fixed;
+        top: 100px; width: 1634px;}
+        #menu li{display: inline;  font-weight: bold; }
+        #menuu li{display: inline; }
+        #head{background-color: rgb(255, 255, 255); position: fixed; width: 100%; top: 0;}
+
+        a{margin-left:20px; margin-right: 20px;}
+        a:link, a:visited{ color: rgb(255, 255, 255); text-decoration: none;}
+        a:hover, a:active{color: #909090;}
+
+        #main_image{clear: both; padding-top: 20px; border: solid 5px black; padding-bottom: 20px;}
+        #pooter{background-color: #000000; color: rgb(157, 157, 157); 
+            font-size: 15px; text-align: center; margin: 20px 0 0 0; padding: 20px 0 20px 0;}
+        #menuu li{display: inline;  }
+
+        .accordion{margin-top: 0px; border: solid 1px white; margin-bottom: 40px;}
+        #nav{ border-bottom: 5px solid black; margin: 0px 0 0 0;}
+        #nav a{color: #000000;}
+        #nav a:hover{color: rgb(141, 141, 141);}
+        .accordion div p{width: 440px; text-align: left;}
+        
+        input[id*="answer"]{display: none; }
+        input[id*="answer"] + label{display: block; padding: 50px; border: 10px solid rgb(255, 255, 255);
+        font-weight: bold; background-color: rgb(0, 0, 0); cursor: pointer; color: aliceblue;}
+    
+       input[id*="answer"] +label +div{max-height: 0; transition: all .35s; overflow: hidden;
+       background-color: rgb(255, 255, 255); font-size: 20px;}
+       
+       input[id*="answer"] +label +div p{display: inline-block; padding: 20px;}
+       input[id*="answer"]:checked +label+div{max-height: 300px;}
+
+       .b{border: solid 5px black; margin: 200px 0 0 0;}
+       
+
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div id="logo">
+            <a href="index.html"><img src="./img/logo.png" alt="" width="150px"></a>
+           
+            </div>
+       
+        </div>
+       
+    
+        <ul id="menu">
+            <li class="item"><a href="pencil.html">연필</a></li>
+            <li>|</li>
+            <li class="item"><a href="erase.html">지우개</a></li>
+            <li>|</li>
+            <li class="item"><a href="colorpencil.html">색연필</a></li>
+            <li>|</li>
+            <li class="item"><a href="marker.html">마카</a></li>
+            <li>|</li>
+            <li class="item"><a href="recommend.html">추천조합</a></li>
+        </ul>
+
+
+    <div class="b">
+        <div id="nav"><h3><a href="recommend.html">흑백</a> | <a href="recommend copy.html">컬러</a> </h3></div>
+<br><br>
+
+
+<div class="accordion">
+    <input type="checkbox" id="answer01">
+    <label for="answer01"><h2>투명한 색감</h2></label>
+    <div>
+        <p> <b>스케치</b> - 스테들러 마스 루모그라프 2H,HB <br>
+            <b>밑톤</b> - 코픽 스케치 마카 <br>
+            <b>묘사</b> - 코픽 스케치 마카, 파버카스텔 수채색연필<br>
+            <b>정리</b> - 파버카스텔 유성색연필<br>
+            <b>지우개</b> - 떡지우개, 전동 지우개 NE-60C<br>
+        </p></div>
+
+    <input type="checkbox" id="answer02">
+    <label for="answer02"><h2>차분한 색감 </h2></label>
+    <div><p><b>스케치</b> - 스테들러 마스 루모그라프 2H,HB <br>
+        <b>밑톤</b> - 알파 디자인 마카 <br>
+        <b>묘사</b> - 코픽 스케치 마카, 파버카스텔 수채색연필<br>
+        <b>정리</b> - 파버카스텔 수채색연필<br>
+        <b>지우개</b> - 톰보 지우개, 파버카스텔 떡지우개 <br>
+         </p></div>
+
+    <input type="checkbox" id="answer03">
+    <label for="answer03"><h2>선명한 색감</h2></label>
+    <div><p><b>스케치</b> - 스테들러 마스 루모그라프 2H,HB <br>
+        <b>밑톤</b> - 신한 TOUCH 마카 <br>
+        <b>묘사</b> - 신한 TOUCH 마카, 프리즈마 유성색연필<br>
+        <b>정리</b> - 프리즈마 유성색연필<br>
+        <b>지우개</b> - 떡지우개, H-B 
+        플라스틱 지우개 <br>
+    </p></div>
+
+   
+
+    
+</div>
+</div>
+    
+
+    <div id="pooter">
+       
+        <p>소속: 계원예술대학교 디지털미디어 디자인과  |  이메일: clari4916@gmail.com
+            <br>제작기간: 2023.11.29 ~ 2023.12.06
+            <br>COPYRIGHT 2023. 남예은 . ALL RIGHTS RESERVED.</p>
+    </div>
+</body>
+</html>

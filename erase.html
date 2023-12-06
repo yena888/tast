@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{text-align: center; margin: 0 10px 0 10px; }
+
+        li{list-style-type: none;}
+        #logo{float: left; text-align: center; margin: 15px 0 6px 788px;}
+        #menu{clear: both; height: 40px; background-color: #000000; color: white;
+        text-align: center; padding-top: 30px; font-size: 20px; margin: 0 20px 0px 0px; position: fixed;
+        top: 100px; width: 1631px; z-index: 10;}
+        #menu li{display: inline;  font-weight: bold; }
+        #menuu li{display: inline; }
+        #head{background-color: rgb(255, 255, 255); position: fixed; width: 100%; top: 0; z-index: 20;
+        }
+        
+
+        a{margin-left:20px; margin-right: 20px;}
+        a:link, a:visited{ color: rgb(255, 255, 255); text-decoration: none;}
+        a:hover, a:active{color: #909090;}
+
+        #main_image{clear: both; padding-top: 20px; border: solid 5px black; padding-bottom: 20px;}
+        #pooter{background-color: #000000; color: rgb(157, 157, 157); 
+            font-size: 15px; text-align: center; margin: 20px 0 0 0; padding: 20px 0 20px 0;}
+        
+
+       
+        
+       
+        .img{vertical-align: top;}
+        .wrap{background: #ffffff; height: 50vh; display: flex;
+        justify-content: center; align-items:center;  margin: 40px 0 0px 0px;}
+        .wrap2{background: #ffffff; height: 50vh; display: flex;
+        justify-content: center; align-items:center; margin: 0 0 40px 0;}
+        .card{width: 450px;  overflow: hidden; position: relative; margin: 0 20px 0 20px;}
+        .card .img{transform: scale(1); object-fit: cover; 
+            transition:opacity 0.5s, transform 1s;}
+        .card:hover .img{transform: scale(1); opacity: 0.3;}
+
+        .text{position: absolute; top:0; left: 0; width: 100%; height: 90%; text-align: center;
+             text-align: center; color: rgb(0, 0, 0);
+        display:flex; align-items: center; justify-content: center; flex-direction: column;}
+    
+        
+        .text h2{text-transform: uppercase; text-shadow: 1px 1px 10px rgba(0, 0, 0, .5); 
+        margin-bottom: 0px; transform: translateY(20px); transition: all 0.5s;}
+        .text p{font-size: 14px; transform: translateY(20px);
+        transition: all 0.5s; opacity: 0;}
+
+        .card:hover .text h2{transform: translateY(0);}
+        .card:hover .text p{transform: translateY(0); opacity: 1;}
+
+        .d{ border: solid 5px black; margin-top: 200px;}
+        
+
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div id="logo">
+            <a href="index.html"><img src="./img/logo.png" alt="" width="150px"></a>
+           
+            </div>
+       
+        </div>
+       
+    
+        <ul id="menu">
+            <li class="item"><a href="pencil.html">연필</a></li>
+            <li>|</li>
+            <li class="item"><a href="erase.html">지우개</a></li>
+            <li>|</li>
+            <li class="item"><a href="colorpencil.html">색연필</a></li>
+            <li>|</li>
+            <li class="item"><a href="marker.html">마카</a></li>
+            <li>|</li>
+            <li class="item"><a href="recommend.html">추천조합</a></li>
+        </ul>
+
+        <div class="d">
+        <div class="wrap">
+            <div class="card">
+                <img src="./img/era1.png" class="img">
+                <div class="text">
+                    <h2>떡지우개</h2>
+                    <p>입시미술에서 가장 많이 사용되는 지우개 중<br> 하나입니다. 
+                        가격이 저렴하고 쉽게 지워진다는<br> 장점을 가지고 있습니다. 
+                        쉽게 마모되고 부서져<br> 세밀한 부분을 지울 때는 꼭 모서리 부분을<br> 
+                        잘라내 뾰족하게 유지해 주어야 합니다.<br><br> 
+                         가장 기본적인 지우개로
+                        단독으로도 충분히 <br>사용할 수 있지만, 다른 용도의 지우개와 같이<br> 
+                        사용할 때 퀄리티를 극대화할 수 있습니다.<br><br><br>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/era2.png" class="img">
+                <div class="text">
+                    <h2>톰보 지우개</h2>
+                    <p>가장 인지도 있는 지우개 중 하나입니다.<br>  다른  지우개보다  쉽게 부서지지 
+                        않고 깔끔하게<br>  지워지는 것이 특징입니다. 떡지우개보다는<br>  잘 지워지지 않지만, 
+                         잘 부서지지 않기 때문에<br>  세밀한 작업을 하기 더 적합합니다.<br> <br> 
+                         가장 기본적인 지우개로
+                         단독으로도 충분히 <br>사용할 수 있지만, 다른 용도의 지우개와 같이<br> 
+                         사용할 때 퀄리티를 극대화할 수 있습니다.<br><br><br></p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="wrap2">
+            <div class="card">
+                <img src="./img/era3.png" class="img">
+                <div class="text">
+                    <h2>파버카스텔 니더블 <br>떡지우개</h2>
+                    <p>반죽 같은 질감으로 원하는 모양으로 변형해<br> 사용할 수 있는 지우개입니다. 
+                        일반 지우개와는<br> 다르게 톤을 덜어내는데 특화되어있습니다.<br> 넓은 면의 톤을 
+                        덜어내고 싶을 때는 책상에 굴려<br> 원통형 모양으로 만들어 원하는 부분에 굴리며<br> 
+                        톤을 덜어내고, 좁은 면적에는 뾰족한 모양으로<br> 만들어 톤을 덜어낼 수 있습니다.<br><br> 
+                        이 지우개는 완벽하게 지워지는 것이 아닌<br> 어둠의 양을 조절하는 느낌이기 때문에<br>
+                         단독으로만 사용하기에는 무리가 있습니다.  
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/era4.png" class="img">
+                <div class="text">
+                    <h2>H-B 제도용, 미술용 <br>
+                        플라스틱 지우개</h2>
+                    <p>일반 지우개보다 훨씬 강도 있는 지우개입니다.<br>  세밀한 부분을 지워야 
+                        할 때 모서리 부분을 이용해<br> 사용하는 것을 추천합니다. 다만 강도가 있는 
+                        만큼<br> 종이가 쉽게 상할 수 있어 꼭 필요한 부위에만<br> 적절히 사용해야 합니다.<br> <br>
+                        그림을 그릴 때 단독으로 사용하기에는 무리가<br> 있어 일반 지우개와 섞어 쓰는 
+                        것을 추천합니다.<br> 또한 세로로 작게 잘라 전동 지우개의 리필심으로<br> 쓸 수도 
+                        있어 활용도가 높습니다.<br><br>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./img/era5.png" class="img">
+                <div class="text">
+                    <h2>
+                        전동 지우개
+                        NE-60C </h2>
+                    <p>전동 지우개는 세밀한 부분을 깔끔하게 지워야<br> 할 때 사용하기 좋습니다. 
+                        기계의 힘을 빌리기<br> 때문에 손으로 지울 때보다 훨씬 잘 지워진다는<br> 장점이 
+                        있습니다. 리필 심을 사도 좋지만, <br>플라스틱 지우개를 잘라서 리필 심로 
+                        사용해도<br> 되기 때문에 두 지우개의 궁합이 좋은 편입니다.<br><br> 다만 전동이 
+                        처음이라면 조절이 어려워<br> 종이가 찢어지거나 손떨림을 따라 지워질 수 
+                        있으니<br>충분한 적응 기간을 가지는 것을 추천합니다.<br><br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pooter">
+       
+        <p>소속: 계원예술대학교 디지털미디어 디자인과  |  이메일: clari4916@gmail.com
+            <br>제작기간: 2023.11.29 ~ 2023.12.06
+            <br>COPYRIGHT 2023. 남예은 . ALL RIGHTS RESERVED.</p>
+    </div>
+</body>
+</html>

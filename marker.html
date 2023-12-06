@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{text-align: center;}
+
+        li{list-style-type: none;}
+        #logo{float: left; text-align: center; margin: 15px 0 8px 790px;}
+        #menu{clear: both; height: 40px; background-color: #000000; color: white; z-index: 2;
+        text-align: center; padding-top: 30px; font-size: 20px; margin: 0 20px 0px 0px; position: fixed;
+        top: 100px; width: 1634px;}
+        #menu li{display: inline;  font-weight: bold; }
+        #menuu li{display: inline; }
+        #head{background-color: rgb(255, 255, 255); position: fixed; width: 100%; top: 0; z-index: 2;}
+
+        a{margin-left:20px; margin-right: 20px;}
+        a:link, a:visited{ color: rgb(255, 255, 255); text-decoration: none;}
+        a:hover, a:active{color: #909090;}
+
+        #main_image{clear: both; padding-top: 20px; border: solid 5px black; padding-bottom: 20px;}
+        #pooter{background-color: #000000; color: rgb(157, 157, 157); 
+            font-size: 15px; text-align: center; margin: 20px 0 0 0; padding: 20px 0 20px 0;}
+        #menuu li{display: inline;  }
+
+        table {
+            margin: 50px auto; 
+            width: 65%;
+            border-collapse: collapse; 
+        }
+        td {
+            width: 40%; 
+            text-align: center; 
+            vertical-align: middle; 
+            border: 3px solid #000; overflow: hidden;
+        }
+        #card{border: solid 5px black; margin-top: 200px;}
+
+    
+        .img_box img{transform: scale(1); object-fit: cover; z-index: 1;
+            transition: transform 1s; overflow: hidden;}
+        .img_box:hover img{transform: scale(1.2); }
+
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div id="logo">
+            <a href="index.html"><img src="./img/logo.png" alt="" width="150px"></a>
+           
+            </div>
+       
+        </div>
+       
+    
+        <ul id="menu">
+            <li class="item"><a href="pencil.html">연필</a></li>
+            <li>|</li>
+            <li class="item"><a href="erase.html">지우개</a></li>
+            <li>|</li>
+            <li class="item"><a href="colorpencil.html">색연필</a></li>
+            <li>|</li>
+            <li class="item"><a href="marker.html">마카</a></li>
+            <li>|</li>
+            <li class="item"><a href="recommend.html">추천조합</a></li>
+        </ul>
+
+        
+        <div id="card">
+            <table>        
+                <tr>
+                    <td > <div class="img_box"><img src="./img/ma1.png" ></div></td>
+                    <td><h2>알파 디자인 마카</h2>
+                        <p> 알파 디자인 마카는 부드럽고 퍼지고 전체적으로 차분하고 <br>
+                            따뜻한 색감이 예쁜 마카입니다. 잉크 리필이 가능해 비교적 <br>
+                            가성비가 괜찮은 편입니다. 닙의 가로 길이가 넓고 각도가<br> 심하지 
+                            않아 넓은 공간을 쉽게 채울 수 있습니다.<br><br> 타 브랜드보다 뚜껑이 
+                            다소 뻑뻑하고 브러쉬닙이 아닌 파인닙이라<br> 섬세한 묘사는 다소 
+                            어렵지만, 깔끔한 느낌은 잘 표현됩니다.</p></td>
+                </tr>
+                <tr>
+                    <td><h2>신한 TOUCH 마카</h2>
+                        <p>신한 터치 마카는 선명하고 짙은 색감이 특징으로 전체적인<br>  밸런스가 
+                            잘 잡혀있는 마카입니다. 닙의 가로 길이와 각도는<br>  코픽과 알파의 중간 
+                            정도이고, 색감이 깊이감 있는 것이<br> 특징입니다. 타 브랜드보다 발색 시 
+                            번쩍거림이 있는 편입니다.<br><br>  
+                            브러쉬닙이 아닌 파인닙이라 섬세한 묘사는 다소 <br> 
+                            어렵지만,  깔끔한 느낌은 잘 표현됩니다.
+                        </p></td>
+                    <td><div class="img_box"><img src="./img/ma2.png" ></div></td>
+                </tr>
+                <tr>
+                    <td><div class="img_box"><img src="./img/ma3.png" ></div></td>
+                    <td><h2>코픽 스케치 마카</h2>
+                        <p>코픽 스케치 마카는 맑고 투명한 색감이 특징인 마카입니다.<br> 
+                            잉크 리필이 가능해 비교적 가성비가 좋은 편이지만,<br> 브러쉬닙이라 
+                            파인닙에 비해 가격대가 있는 편입니다.<br> 닙 중간이 단단한 느낌이고  
+                            붓과 비슷한 느낌을 받을 수<br> 있습니다. 하지만, 닙의 가로길이가 가장 
+                            작고 각도가 뾰족해<br> 넓은 면을 고르게 칠하기 어렵다는 단점이 있습니다.<br><br>
+                            브러쉬닙 특성상 파인닙보다 세밀하고 섬세한  묘사를 하기 쉽습니다.</p></td>
+                </tr>
+                
+                
+            </table>
+        </div>
+
+
+    <div id="pooter">
+       
+        <p>소속: 계원예술대학교 디지털미디어 디자인과  |  이메일: clari4916@gmail.com
+            <br>제작기간: 2023.11.29 ~ 2023.12.06
+            <br>COPYRIGHT 2023. 남예은 . ALL RIGHTS RESERVED.</p>
+    </div>
+</body>
+</html>

@@ -5,76 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+         body{text-align: center;}
 
-*{padding: 0; margin: 0;}
-     li{list-style-type: circle;}
-     #head{background-color: rgb(224, 224, 224);}
-     #logo{float: left; margin: 20px 0 10px 20px; border: solid 1px black; font-size: 56PX; font-weight: bold; text-align: center;}
-     #menu{clear: both; height: 40px; background-color: rgb(255, 255, 255); color: black; text-align: center;
-    padding-top: 5px; font-size: 20px; border: solid 1px black; margin: 0 30px 0 30px;} 
-     
-    a{margin-left:50px}
-        a:link, a:visited{border: 1px black; 
-            color: rgb(0, 0, 0); 
-        padding: 0px 20px; text-align: center; text-decoration: none; display: inline-block;}
-        a:hover, a:active{background-color: rgb(231, 231, 231);}
+        li{list-style-type: none;}
+        #logo{float: left; text-align: center; margin: 15px 0 8px 790px;}
+        #menu{clear: both; height: 40px; background-color: #000000; color: white;
+        text-align: center; padding-top: 30px; font-size: 20px; margin: 0 20px 0px 0px; position: fixed;
+        top: 100px; width: 1634px; z-index: 2;}
+        #menu li{display: inline;  font-weight: bold; }
+        #menuu li{display: inline; }
+        #head{background-color: rgb(255, 255, 255); position: fixed; width: 100%; top: 0; z-index: 2;}
+
+        a{margin-left:20px; margin-right: 20px;}
+        a:link, a:visited{ color: rgb(255, 255, 255); text-decoration: none;}
+        a:hover, a:active{color: #909090;}
+
+        
+        #pooter{background-color: #000000; color: rgb(157, 157, 157); 
+            font-size: 15px; text-align: center; margin: 20px 0 0 0; padding: 20px 0 20px 0;}
+        #menuu li{display: inline;  }
+
+        #text{border: solid 5px #000000; margin: 50px 0 0 0; padding-top: 40px; padding-bottom: 20px;}
 
 
-
-
-        *{margin: 0; padding: 0; box-sizing: border-box; font-family: Montserrat;}
-        li{list-style: none;}
-        a{text-decoration: none; color: inherit;}
-        img{vertical-align: top;}
-        .wrap{background: #282828; height: 100vh; display: flex;
-        justify-content: center; align-items:center;}
-        .card{width: 1400px; height: 600px; overflow: hidden; position: relative;}
+        .card{width: 1664px; height: 420px; overflow: hidden; position: relative; z-index: 1;
+            clear: both; padding-top: 20px; border: solid 5px black; padding-bottom: 20px;
+        margin: 200px 0 0 0;}
         .card .img{transform: scale(1.15); object-fit: cover; 
             transition:opacity 0.5s, transform 1s;}
         .card:hover .img{transform: scale(1); opacity: 0.5;}
 
-        .text{position: absolute; top:0; left: 0; width: 100%; height: 100%; text-align: center;
-             text-align: center; color: rgb(255, 255, 255);
-        display:flex; align-items: center; justify-content: center; flex-direction: column;}
+        .text1{position: absolute; top:0; left: 0; width: 100%; height: 80%; text-align: center;
+             text-align: center; color: rgb(255, 255, 255); font-size: 25px; z-index: 1;
+        display:flex; align-items: center; justify-content: center; flex-direction: column;
+    transition: 0.5s;}
+        .text1:hover{color: #000000; font-size: 30px; transition:  0.5s; font-weight: bold;}
     
         
-        .text h2{text-transform: uppercase; text-shadow: 1px 1px 10px rgba(0, 0, 0, .5); 
-        margin-bottom: 10px; transform: translateY(20px); transition: all 0.5s;}
-        .text p{font-size: 14px; transform: translateY(20px);
-        transition: all 0.5s; opacity: 0;}
-
-        .card:hover .text h2{transform: translateY(0);}
-        .card:hover .text p{transform: translateY(0); opacity: 1;}
-        
-
     </style>
 </head>
 
-
 <body>
     <div id="head">
-       <div id="logo"><a href="index.html">PROTFOLIO</a></div>
-      </div>
-  
-      <div id="menu">
-          <ul id="menu">
-              <a href="designfinal.html">명화</a> 
-              <a href="videotwo.html">커피랑도서관</a> <a href="focus.html">에니어그램</a> 
-              <a href="whale.html">고래</a><a href="how.html">기획방식</a>
-  
-          </ul> 
-          <br>
-
-
-
-    <div class="wrap">
-        <div class="card">
-            <img src="./img/main.jpg" class="img">
-            <div class="text">
-                <h2>PROTFOLIO</h2>
-                <p>2023.03.02~2023.10.25</p>
-            </div>
+        <div id="logo">
+        <a href="index.html"><img src="./img/logo.png" alt="" width="150px"></a>
+       
         </div>
+        </div>
+       
+    
+        <ul id="menu">
+            <li class="item"><a href="pencil.html">연필</a></li>
+            <li>|</li>
+            <li class="item"><a href="erase.html">지우개</a></li>
+            <li>|</li>
+            <li class="item"><a href="colorpencil.html">색연필</a></li>
+            <li>|</li>
+            <li class="item"><a href="marker.html">마카</a></li>
+            <li>|</li>
+            <li class="item"><a href="recommend.html">추천조합</a></li>
+        </ul>
+
+        
+    <div  class="card">
+        <img src="./img/main_ba.png" alt="" width="1620px" class="img">
+        <div class="text1"><h2>당신을 위한 건식재료 추천</h2></div>
+    </div>
+
+    <div id="text">
+        <video width="600"autoplay controls loop>
+            <source src="./sketch_-_77021 (720p).mp4" type="video/mp4">
+        </video>
+        <h2>건식 재료를 추천하는 이유</h2>
+    <p>습식 재료에 비해 비교적 가격이 저렴한 재료가 많고, 누구나 한 번쯤 접해본 도구가 많아 <br>
+        비교적 쉽게 적응할 수 있습니다.  그림을 그릴 때 준비해야 하는 물품도 접근성이 좋고, <br>
+        일반적으로 습식 재료에 비해 휴대성이 좋다는 특징이 있습니다.<br><br> 습식 재료에 비해 형태감을 익히기
+        더 적합하고, 기초적인 드로잉 실력을 늘리기 수월합니다.<br>
+        또한, 습식 재료를 사용하더라도 건식 재료와 
+        함께 사용하는 경우가 많기 때문에<br> 건식 재료에 먼저 익숙해지는 연습을 하는 것을 추천합니다. </p>
+    
+        </div>
+
+    <div id="pooter">
+       
+        <p>소속: 계원예술대학교 디지털미디어 디자인과  |  이메일: clari4916@gmail.com
+            <br>제작기간: 2023.11.29 ~ 2023.12.06
+            <br>COPYRIGHT 2023. 남예은 . ALL RIGHTS RESERVED.</p>
     </div>
 </body>
 </html>
